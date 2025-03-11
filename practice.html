@@ -22,7 +22,7 @@ from{opacity:0;}
 to{opacity:1;}
 }
 
- header
+// header
 {
 Background:#4F959D;
 font-size:40px;
@@ -30,8 +30,8 @@ text-align:center;
 color:white;
 padding:10px;
 animation:ani 0.75s;
-border:dotted;
-
+border:ridge;
+margin-top:1%;
 font-family:Arial;
 }
 
@@ -39,9 +39,12 @@ font-family:Arial;
 
 nav
 {
-background:#4F959D;
+//background:#C70039;
 width:30%;
-margin-left:35%;
+margin-left:2%;
+margin-top:2%;
+animation:ani 0.75s;
+
 
 
 
@@ -59,9 +62,11 @@ nav ol li
 padding:50px;
 list-style:none;
 cursor:pointer;
-border:1px black solid;
-box-shadow: 5px 5px 5px white;
-border-radius:15px;
+//border:1px black solid;
+//box-shadow: 2px 3px 2px white;
+//border-radius:80px;
+
+
 }
 
 
@@ -106,14 +111,27 @@ body
 text-align:center;
 font-size:30px;
 margin:auto;
-//background:black;
-//background:url(Photos/bg2.jpg);
-//background:url(Photos/bg4.jpg);
-background:url(Photos/bg6.jpg);
+background:grey;
+//background-image:linear-gradient(red 20%, orange 60%, red 80%);
+
+
 }
 
+button
+{
+width:120%;
+background-color:black;
+font-size:24%;
+padding:10px 24px;	
 
+}
 
+.button-container
+{
+
+display:flex;
+
+}
 
 
 </style>
@@ -122,26 +140,27 @@ background:url(Photos/bg6.jpg);
 <body>
 
 <header>
-Practice Page
+
 
 </header>
 
 <nav>
 <ol>
+<div class="button-container">
+<button><li><a href="zoom.html" target="blank"> Web Gallery</a></li></button>
 
-<li><a href="zoom.html" target="blank"> Web Gallery</a></li>
+<button><li><a href="table.html" target="blank"> Html Table </a></li></button> 
 
-<li><a href="table.html" target="blank"> Html Table </a></li> 
+<button><li><a href="video.html" target="blank"> Media</a></li></button>
 
-<li><a href="video.html" target="blank"> Media </a></li>
+<button><li><a href="background video.html" target="blank"> Video </a></li></button>
 
-<li><a href="background video.html" target="blank"> Video </a></li>
+<button><li><a href="news.html" target="blank"> News </a></li></button>
 
-<li><a href="news.html" target="blank"> News </a></li>
+<button><li><a href="menu.html" target="blank"> Menu </a></li></button>
 
-<li><a href="menu.html" target="blank"> Menu </a></li>
 
-<li><a href="flex.html" target="blank"> Flex & Shoping Card </a></li>
+</div>
 </ol>
 </nav>
 
