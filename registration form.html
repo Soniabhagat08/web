@@ -1,0 +1,173 @@
+<!doctye html>
+
+
+<head><title> Registration form </title>
+</head>
+
+
+
+<style>
+header
+{
+text-align:center;
+font-size:50px;
+font-family:Arial black;
+color:purple;
+background:yellow;
+width:35%;
+margin:auto;
+border-radius:20px;
+}
+
+#container
+{
+margin:auto;
+text-align:center;
+width:50%;
+background:gray;
+border-radius:20px;
+padding:20px;
+}
+
+input[type="text"]{width:100%;heigth:40px;}
+input[type="password"]{width:100%;heigth:40px;}
+input[type="submit"]{padding:30px;width:50%;background:yellow;color:white;font-size:30px;}
+input[type="rset"]{padding:30px;width:50%;background:yellow;color:white;font-size:30px;}
+
+
+
+input[type="radio"{width:10%;heigth:40px;}
+input[type="checkbox"{width:10%;heigth:40px;}
+select{width:10%;height:50px;}
+input{width:100%;height:50px;}
+textarea{width:100%;height:50px;}
+
+input:invalid
+{
+border:red solid 3px;
+background:cyan;
+
+}
+
+
+input:focus
+{
+border:blue solid 3px;
+}
+
+body
+{
+background-color:black;
+
+}
+
+</style>
+
+
+
+<body>
+<header> Registration Form </header>
+
+<div id="container">
+<form action="http://adaniplay/user/get.php" Method="post">
+<table cellpadding="40">
+
+<caption style="font-size:45px"></caption>
+
+<tr><td><lable> User Name </lable></td>
+
+<td>
+
+<input type="text" pattern="[A-Za-z]" title="type your Name....!"
+placeholder="type user id..."required>
+</tr>
+
+
+
+<tr><td><label>Password</label></td>
+<td>
+<input type="Password"  title="type your password here....!"
+placeholder="type user password..." required>
+</tr>
+
+<tr><td><label> Age </label></td>
+<td>
+<input type="Number" max="35" min="18"  title="type your age here....!"
+placeholder="type age here..." required>
+</td>
+</tr>
+
+<tr><td><label> Gender </label></td>
+<td>
+Male<input type="checkbox" Value="Male" name="gender">
+female<input type="checkbox" Value="Female" name="gender">
+others<input type="checkbox" Value="others" name="gender">
+</td>
+</tr>
+<tr><td><label> Hobby </label></td>
+<td>
+Reading<input type="radio" value="Reading">
+Dacing<input type="radio" value="Dancing">
+cooking<input type="radio" value="Cooking">
+</td>
+</tr>
+
+<tr><td><label> DOB </label></td>
+<td>
+<input type="date">
+</td>
+
+
+
+<tr><td><label> Time </label></td>
+<td>
+<input type="time">
+</td>
+
+
+
+<tr><td><label> E-Mail </label></td>
+<td>
+<input type="email">
+</td>
+
+<tr><td><label> City</label></td>
+<td>
+<select>
+<input list="City choice" id="City choice" name="City choice">
+<datalist id="City choice">
+<Option value="Andhra Pradesh"></option>
+<Option value="Arunachal Pradesh"></option>
+<Option value="Assam"></option>
+<Option value="Bihar"></option>
+<Option value="NCR Delhi"></option>
+</select>
+
+<tr><td><label> Message </label></td>
+<td>
+<textarea placeholdeeer="type message here" cols="50" rows="5"></textarea>
+
+
+
+
+
+
+
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<button style="width:20%;background-color:blue;font-size:30;">Reset</button>
+<button style="width:20%;background-color:blue;font-size:30;">Submit</button>
+
+</body>
+
+
+</html>
