@@ -78,7 +78,7 @@ background-color:black;
 
 <td>
 
-<input type="text" pattern="[A-Za-z]" title="type your Name....!"
+<input type="text" pattern="[A-za-z]" title="type your Name....!"
 placeholder="type user id..."required>
 </tr>
 
@@ -99,16 +99,20 @@ placeholder="type age here..." required>
 
 <tr><td><label> Gender </label></td>
 <td>
-Male<input type="checkbox" Value="Male" name="gender">
-female<input type="checkbox" Value="Female" name="gender">
-others<input type="checkbox" Value="others" name="gender">
+Male<input type="radio" Value="Male" name="gender">
+female<input type="radio" Value="Female" name="gender">
+others<input type="radio" Value="others" name="gender">
 </td>
 </tr>
 <tr><td><label> Hobby </label></td>
 <td>
-Reading<input type="radio" value="Reading">
-Dacing<input type="radio" value="Dancing">
-cooking<input type="radio" value="Cooking">
+Reading<input type="checkbox" value="Reading">
+Dacing<input type="checkbox" value="Dancing">
+cooking<input type="checkbox" value="Cooking">
+Writing<input type="checkbox" value="Writing">
+sports<input type="checkbox" value="Sports">
+Craft<input type="checkbox" value="Craft">
+Eating<input type="checkbox" value="Eating">
 </td>
 </tr>
 
@@ -133,24 +137,18 @@ cooking<input type="radio" value="Cooking">
 
 <tr><td><label> City</label></td>
 <td>
-<select>
-<input list="City choice" id="City choice" name="City choice">
-<datalist id="City choice">
+
+<input list="Citychoice" id="Citychoice" name="City choice">
+<datalist id="Citychoice">
 <Option value="Andhra Pradesh"></option>
 <Option value="Arunachal Pradesh"></option>
 <Option value="Assam"></option>
 <Option value="Bihar"></option>
 <Option value="NCR Delhi"></option>
-</select>
 
 <tr><td><label> Message </label></td>
 <td>
 <textarea placeholdeeer="type message here" cols="50" rows="5"></textarea>
-
-
-
-
-
 
 
 </td>
@@ -159,13 +157,18 @@ cooking<input type="radio" value="Cooking">
 
 
 
+<tr><td><lable> </lable></td>
+
+<td>
+
+
+<button style="width:30%;background-color:green;font-size:30;padding 10px 10px 10px;">Submit</button>
+<button style="width:30%;background-color:green;font-size:30;padding 10px 10px 10px;">Reset</button>
+</tr>
 
 
 
 
-
-<button style="width:20%;background-color:blue;font-size:30;">Reset</button>
-<button style="width:20%;background-color:blue;font-size:30;">Submit</button>
 
 </body>
 
