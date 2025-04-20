@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Dynamic Photo Gallery </h1>
+
+    <script>
+
+var p;
+var c
+
+for (var i=1;i<=30;i++)
+{
+c = document.createElement("span")
+c.style.fontSize="30px"
+c.innerHTML ="&#9978;"
+document.body.appendchild(c)
+
+}
+
+
+document.write("<br/>")
+for(var i =1;i<=10;i++)
+
+{
+p = document.createElement("img")
+p.src="Photos/P"+1+".jpg"
+document.body.appendchild(p)
+p.className="pic"
+}
+
+document.title = "No Error"
+
+
+
+
+    </script>
+    
+</body>
+</html>
