@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+#menu
+{
+background-color: rgb(227, 162, 0);
+
+width:45px;
+padding: 10px;
+font-size: 20px;
+
+
+}
+
+li
+{
+width:200px;
+background-color:gray;
+list-style: none;
+text-align: center;
+padding:10px;
+margin-left: 2px;
+
+}
+#projectsub
+{
+    margin-left:80px;
+    margin-top:-20px;
+
+}
+
+#aotmsub
+{
+    margin-left:150px;
+    margin-top:-100px;
+
+}
+
+#menu,#project,#aotm
+{
+    cursor: pointer;
+}
+
+
+
+</style>
+
+
+
+
+
+
+<body>
+  <div id="menu">Menu</div>
+    <ol id="submenu">
+<li>Home</li>
+<li id="project">Project</li>
+   <ol id="projectsub">
+    <li>Sun Rise Web site</li>
+    <li id="aotm">AOTM WEB SITE</li>
+
+<ol id="aotmsub">
+<li> Botanical Garden Website</li>
+<li> Event Management Web Site</li>
+
+
+</ol>
+</ol>
+<li>Service</li>
+<li>About</li>
+<li>Data</li>
+<li>Contact</li>
+
+  
+    </ol>
+
+<script>
+
+var menu= document.getElementById("menu")
+var submenu= document.getElementById("submenu")
+var project= document.getElementById("project")
+var projectsub= document.getElementById("projectsub")
+var aotm= document.getElementById("aotm")
+var aotmsub= document.getElementById("aotmsub")
+var pro,mon
+submenu.style.display="none"
+projectsub.style.display="none"
+aotmsub.style.display="none"
+
+
+var kya_menu_on_hai ="no"
+menu.onclick = function()
+{
+if(kya_menu_on_hai ="no")
+{
+submenu.style.display="block"
+kya_menu_on_hai ="yes"
+
+}
+
+else
+{
+submenu.style.display="none"
+projectsub.style.display="none"
+aotm.style.display="none"
+kya_menu_on_hai="none"
+}
+
+
+}
+
+pro=true
+
+project.onclick =function()
+{
+
+if(pro)
+{
+projectsub.style.display="none"
+pro=false
+
+}
+else{
+projectsub.style.display="block"
+pro=true
+
+}
+
+}
+
+mon = true
+aotm.onclick = function()
+{
+
+if(mon)
+{
+    aotmsub.style.display="none"
+    mon=false
+}
+
+else{
+
+aotmsub.style.display="block"
+mon=true
+    
+
+}
+}
+
+
+
+
+document.title="Menu"
+
+
+</script>
+
+
+</body>
+</html>
