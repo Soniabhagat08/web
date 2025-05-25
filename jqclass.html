@@ -3,53 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Global warming</title>
 </head>
 <link
 rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
 <style>
+ 
+  body{
+    background-color: rgb(160, 161, 143);
+  //background: url(Photos/g3.jpg);
+    background-size:100%,100%;
+  
+    
+  }
+
+h1{
+ background-color: rgb(218, 215, 60);
+ font-size:40px;
+ width: 25%;
+ text-align: center;
+ margin-left: 38%;;
+ height: 8vh;
+ border-radius: 50px;
+ 
+}
+
+h1:hover{
+  color:brown;
+  cursor: pointer;
+  box-shadow:gray 5px 5px;
+  border: 8px ridge green;
+}
 
 .mselect
 {
-    background:gray;
-    padding:30px;
-    border:7px green ridge;
-
+    background:rgb(216, 216, 216);
+    padding:10px;
+    text-align: center;
+    font-size:25px;
+    color: brown;
+  
 }
 
 
 </style>
 <body>
 
+ 
+
+
+<h1>Global Warming</h1>
+
     <script>
 
         $(document).ready(function(){
 //$("*").hide(1000);
 
-$("p:first").css({"cursor":"pointer","font-size":"40px","font-family":"Arial black"})
+$("span").css({"cursor":"pointer","font-size":"20px","font-family":"Arial black"})
 
-$("p:first").click(function()
+$("span").click(function()
+{
+alert($(this).css("font-size"))
+
+})
+$("span").css({"cursor":"pointer","font-size":"40px","font-family":"Arial black"})
+
+$("span").click(function()
 {
 alert($(this).css("font-size"))
 
 })
 
-$("p").mouseover(funtion()
+
+$("span").mouseover(function()
 {
-$(this).css("border":"3px black solid").addClass("mselect")
+$(this).css("border","3px green ridge", "text-align","center").addClass("mselect")
+
+
+
+})
+
+$("span").mouseout(function()
+{
+$(this).css("border","3px green ridge", "text-align","center").removeClass("mselect")
 
 
 
 })
 
 
-
-
         })
     </script>
     
-  <p>
+  
 <span id="about">About</span>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat voluptas cupiditate iure? Rem aut necessitatibus aperiam dolorem mollitia quia, sed at nobis, corrupti cum ipsam velit est quod dolorum eius!
 Culpa maiores, recusandae porro autem eos perferendis sunt atque voluptatem iusto quae soluta magnam, quibusdam eaque illum repudiandae omnis ab sequi tempore ut in veritatis aspernatur. Nulla quos est fuga?
@@ -60,7 +109,7 @@ Accusamus similique fugiat, molestias blanditiis quidem commodi sapiente, invent
 Harum dolorum libero necessitatibus veniam? Laboriosam perspiciatis fuga, et voluptatibus praesentium molestias eaque rerum ipsa libero ad explicabo repellendus architecto culpa laborum, impedit a nisi pariatur fugiat earum quae. Animi.</p>
 
 
-<span id="branches">Branches</span>
+<span id="about">Branches</span>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat voluptas cupiditate iure? Rem aut necessitatibus aperiam dolorem mollitia quia, sed at nobis, corrupti cum ipsam velit est quod dolorum eius!
 Culpa maiores, recusandae porro autem eos perferendis sunt atque voluptatem iusto quae soluta magnam, quibusdam eaque illum repudiandae omnis ab sequi tempore ut in veritatis aspernatur. Nulla quos est fuga?
 Eaque ipsum nisi consequatur ducimus maxime sit soluta aspernatur itaque. Ut, incidunt! Voluptatem, fuga. Suscipit cum est assumenda nostrum corporis harum officiis dignissimos iure aliquam qui, veritatis accusantium, doloremque placeat!
@@ -70,7 +119,7 @@ Accusamus similique fugiat, molestias blanditiis quidem commodi sapiente, invent
 Harum dolorum libero necessitatibus veniam? Laboriosam perspiciatis fuga, et voluptatibus praesentium molestias eaque rerum ipsa libero ad explicabo repellendus architecto culpa laborum, impedit a nisi pariatur fugiat earum quae. Animi.</p>
 
 
-<span id="data">Data</span>
+<span id="about">Data</span>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat voluptas cupiditate iure? Rem aut necessitatibus aperiam dolorem mollitia quia, sed at nobis, corrupti cum ipsam velit est quod dolorum eius!
 Culpa maiores, recusandae porro autem eos perferendis sunt atque voluptatem iusto quae soluta magnam, quibusdam eaque illum repudiandae omnis ab sequi tempore ut in veritatis aspernatur. Nulla quos est fuga?
 Eaque ipsum nisi consequatur ducimus maxime sit soluta aspernatur itaque. Ut, incidunt! Voluptatem, fuga. Suscipit cum est assumenda nostrum corporis harum officiis dignissimos iure aliquam qui, veritatis accusantium, doloremque placeat!
@@ -79,7 +128,7 @@ Quaerat asperiores voluptas ea praesentium quos suscipit perferendis beatae labo
 Accusamus similique fugiat, molestias blanditiis quidem commodi sapiente, inventore voluptatibus doloremque iusto minima voluptatem quos explicabo atque quasi dolore eaque cum amet itaque sint ullam rem hic esse? Omnis, a?
 Harum dolorum libero necessitatibus veniam? Laboriosam perspiciatis fuga, et voluptatibus praesentium molestias eaque rerum ipsa libero ad explicabo repellendus architecto culpa laborum, impedit a nisi pariatur fugiat earum quae. Animi.</p>
 
-  </p>  
+  
 
 
 
