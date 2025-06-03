@@ -6,7 +6,14 @@
     <title>jQuery Animate</title>
      <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
 </head>
+<a href="jq.html" id="close">
+<img src="Photos/close.png" width="30px">
+</a>
 <style>
+
+body{
+  background: rgb(190, 167, 167);
+}
 #box
 {
     color:rgb(162, 162, 15);
@@ -16,23 +23,56 @@
     display:inline-block;
     padding:20px;
     position: absolute; 
-    box-shadow: 5px 5px gray;
+    box-shadow: 5px 5px 5px gray;
     left:-500px;
+    border-radius:10px;
+    cursor: pointer;
 
 
 }
+
+#box:hover{
+  color:red;
+  background: rgb(204, 204, 62);
+  box-shadow: 5px 5px 5px black;
+}
 </style>
 <body>
-  <hedaer>
+  <header>
     <h1 id="box">jQuery Animate</h1>
-  </hedaer>
+  </header>
   
  <script>
-$(documet).ready(function()
+$(document).ready(function()
 {
-$("#box").animate({left:"300px"},1000).
-   
+$("#box").animate({left:"550px"},1000).delay(1000).animate({top:"+=100px"},500).delay(500).animate({fontSize:"100px"},300).delay(400)
+$("#box").animate({borderRadius:"100px",padding:"+=30px"},1000,mycolor).delay(5000)
+  
 })
+
+var r,g,b,c
+
+function mycolor()
+{
+
+d=document.getElementById("box")
+setInterval(function()
+{
+r = Math.round(Math.random()*255)
+g = Math.round(Math.random()*255)
+b = Math.round(Math.random()*255)
+c = `rgb(${r},${g},${b})`
+d.style.color=c
+
+
+
+
+},1000)
+
+}
+
+
+
 
  </script>
 </body>
