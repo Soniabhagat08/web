@@ -116,17 +116,17 @@ width:100px;
 }
 
 
-#video
+#photo
 {
-  width:100%;
-  height: 50%;
-margin-top:160px;
-  background: #a2acc4;
- overflow-x: hidden;
+  //width:100%;
+  //height: 80%;
+margin-top:163px;
+ 
+
 
 }
 
-#smurf-container h1
+#smurf-charater h1
 {
 color: #f0f4f4;
 height: 50px;
@@ -204,9 +204,24 @@ color:white;
 
 button li a{
   text-decoration: none;
+  color: #f0f4f4;
  
 }
 
 button li{
   list-style: none;
+}
+
+#trailer
+{
+  width:50%;
+  margin-top:50px;
+ 
+
+}
+
+video
+{
+  width:200%;
+  border-radius: 30px;
 }
