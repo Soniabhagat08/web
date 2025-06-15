@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smurfs Quiz</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #cce7ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .quiz-container {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 20px 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0055cc;
+    }
+
+    .question {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .answers {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .answers li {
+      margin: 10px 0;
+    }
+
+    button {
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background-color: #007acc;
+    }
+
+    #result {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #008000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Smurfs Quiz</h1>
+    <div id="quiz">
+      <div class="question" id="question"></div>
+      <ul class="answers" id="answers"></ul>
+      <button onclick="submitAnswer()">Submit Answer</button>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script>
+    const quizData = [
+      {
+        question: "Who is the leader of the Smurfs?",
+        answers: ["Papa Smurf", "Smurfette", "Brainy Smurf", "Hefty Smurf"],
+        correct: "Papa Smurf"
+      },
+      {
+        question: "What color are the Smurfs?",
+        answers: ["Red", "Blue", "Green", "Yellow"],
+        correct: "Blue"
+      },
+      {
+        question: "What does Gargamel want to do with the Smurfs?",
+        answers: [
+          "Become friends",
+          "Turn them into gold",
+          "Give them a home",
+          "Make them kings"
+        ],
+        correct: "Turn them into gold"
+      },
+      {
+        question: "Which Smurf is the only female (originally)?",
+        answers: ["Smurfette", "Clumsy", "Vanity", "Baby Smurf"],
+        correct: "Smurfette"
+      }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    const questionEl = document.getElementById("question");
+    const answersEl = document.getElementById("answers");
+    const resultEl = document.getElementById("result");
+
+    function loadQuestion() {
+      const q = quizData[currentQuestion];
+      questionEl.textContent = q.question;
+      answersEl.innerHTML = "";
+
+      q.answers.forEach(answer => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <label>
+            <input type="radio" name="answer" value="${answer}"> ${answer}
+          </label>`;
+        answersEl.appendChild(li);
+      });
+
+      resultEl.textContent = "";
+    }
+
+    function submitAnswer() {
+      const selected = document.querySelector('input[name="answer"]:checked');
+      if (!selected) {
+        resultEl.textContent = "Please select an answer!";
+        return;
+      }
+
+      if (selected.value === quizData[currentQuestion].correct) {
+        score++;
+        resultEl.textContent = "Correct!";
+      } else {
+        resultEl.textContent = `Wrong! Correct answer: ${quizData[currentQuestion].correct}`;
+      }
+
+      currentQuestion++;
+      if (currentQuestion < quizData.length) {
+        setTimeout(loadQuestion, 1000);
+      } else {
+        setTimeout(showFinalScore, 1000);
+      }
+    }
+
+    function showFinalScore() {
+      quiz.innerHTML = `
+        <h2>Quiz Finished!</h2>
+        <p>You scored ${score} out of ${quizData.length}</p>
+        <button onclick="restartQuiz()">Try Again</button>
+      `;
+    }
+
+    function restartQuiz() {
+      currentQuestion = 0;
+      score = 0;
+      loadQuestion();
+    }
+
+    // Load the first question
+    loadQuestion();
+  </script>
+</body>
+</html>
