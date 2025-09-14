@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<a href="javascript.html" id="close">
+<img src="Photos/close.png" width="30px">
+</a>
+<style>
+*{
+margin:0;
+padding:0;
+transition:0.50s;
+}   
+
+
+
+header{
+width:100%
+height:100px;
+box-shadow: 10px 10px 10px gray;
+margin:auto;
+text-align:center;
+color:teal	;			
+}
+
+
+.pic{
+width:100%;
+height:500px;
+transition:2s;
+}
+
+
+
+</style> 
+<body>
+
+    <header>
+<h1 id="text">Image of the Day  </h1>
+<img id="pic" src="Photos/n1.jpg" class="pic">
+    </header>
+
+
+</body>
+
+<script>
+
+var pic = document.getElementById("pic")
+var text = document.getElementById("text")
+
+var today = new Date().getDay()
+
+
+
+switch(today)
+{
+case 1:		
+
+    pic.src="Photos/n2.jpg"
+    text.innerHTML="Image of the MonDay"
+break;
+
+
+
+case 2:
+
+    pic.src="Photos/n3.jpg"
+    text.innerHTML="Image of the TuesDay"
+
+
+break;
+
+
+
+
+case 3:
+
+    pic.src="Photos/n4.jpg"
+    text.innerHTML="Image of the WednesDay"
+
+break;
+
+
+
+case 4:
+
+    pic.src="Photos/n5.jpg"
+    text.innerHTML="Image of the ThursDay"
+
+break;
+
+
+
+case 5:
+
+    pic.src="Photos/n6.jpg"
+    text.innerHTML="Image of the FriDay"
+
+break;
+
+
+
+
+case 6:
+
+    pic.src="Photos/n7.jpg"
+    text.innerHTML="Image of the SaturDay"
+
+
+break;
+
+
+
+case 7:
+
+    pic.src="Photos/n8.jpg"
+    text.innerHTML="Image of the SunDay"
+    
+ default:
+}
+
+
+
+</script>
+
+</html>
