@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aura Smart Home</title>
+    <link rel="icon" type="image" href="images/aura.png">
+     <link rel="stylesheet" href="style.css" /> 
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>   
+</head>
+<body>
+    <div id="home">
+      <img id="aura" src="images/aura.png" width="25" height="25">
+    <h2>Automation Home Controller </h2>
+    </div>
+
+
+      <header class="header">
+    <h2>Welcome,Lee</h2>
+
+    <div class="profile-pic">
+      <img  id="pho" src="images/kitchen.jpg" width="40" height="40">
+    </div>
+    <button id="theme-toggle">🌓Theme</button>
+  </header>
+
+
+
+
+ <body>
+
+  <div class="weather-card">
+    <div class="top-section">
+      <div>
+        <div class="location-time" id="location">New Delhi <br><span id="time">--:--</span></div>
+        
+      </div>
+      <div class="unit-toggle">
+        <button onclick="setUnit('F')">°F</button>
+        <button class="active" onclick="setUnit('C')">°C</button>
+      </div>
+    </div>
+
+    <div class="current-weather">
+      <img src="images/wt.png" alt="Haze" />
+      <div class="current-weather-info">
+        <div class="temperature" id="current-temp">33°C</div>
+        <div class="condition">Haze</div>
+        <div class="high-low">H 34° L 27°</div>
+      </div>
+    </div>
+
+    <div class="forecast" id="forecast">
+     
+    </div>
+  </div>
+
+
+
+
+
+
+<section class="room">
+    <div class="cards">
+<div class="image">
+<img id="pic" src="images/guestr.jpg" width="290">
+</div>
+<div class="title">
+  <h1>Guest Room</h1>
+
+</div>
+<div class="des">
+  
+  <button id="btn"><li><a href="guestroom.html" target="blank">Access devices</a></li></button>
+</div>
+</div>
+</div>
+
+
+<div class="cards">
+<div class="image"> 
+<img  id="pic"src="images/bedroom2.jpg" width="290" height="229" >
+</div>
+<div class="title">
+  <h1>Bed Room</h1>
+
+</div>
+<div class="des">
+  
+  <button id="btn"><li><a href="bedroom.html" target="blank">Access devices</a></li></button>
+</div>
+</div>
+</div>
+
+
+
+<div class="cards">
+<div class="image">
+<img  id="pic" src="images/livingr1.png" width="290" height="229" >
+</div>
+<div class="title">
+  <h1>Living Room</h1>
+
+</div>
+<div class="des">
+  
+  <button id="btn"><li><a href="livingroom.html" target="blank">Access devices</a></li></button>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cards">
+<div class="image">
+<img  id="pic" src="images/kitchen2.jpg" width="290" height="229" >
+</div>
+<div class="title">
+  <h1>Kitchen</h1>
+
+</div>
+<div class="des">
+  
+  <button id="btn"><li><a href="kitchen.html" target="blank">Access devices</a></li></button>
+</div>
+</div>
+</div>
+</section>
+
+  <section class="mood-control">
+    <h3>Select Mood</h3>
+    <div class="moods">
+      <button class="mood-btn">❄️<br> C<br> o<br> o<br>l</button>
+      <button class="mood-btn">💧 <br>D<br>r<br>y</button>
+      <button class="mood-btn">🔥<br> H<br>e<br>a<br>t</button>
+      <button class="mood-btn">🌡️ <br>W<br>a<br>r<br>m</button>
+    </div>
+    <label for="timer">Add Timer: <span style="color:aqua" id="timer-value">8 mins</span> </label>
+    <input type="range" id="timer" min="1" max="60" value="8" />
+  </section>
+
+
+
+<script>
+$(document).ready(function()
+{
+$("#home").animate({top:"10px"},100).delay(100)
+$("#home").animate({padding:"+=1px"},1000,mycolor).delay(5000)
+  
+})
+/*var r,g,b,c
+
+function mycolor()
+{
+
+d=document.getElementById("home")
+setInterval(function()
+{
+r = Math.round(Math.random()*255)
+g = Math.round(Math.random()*255)
+b = Math.round(Math.random()*255)
+c = `rgb(${r},${g},${b})`
+d.style.color=c
+
+
+
+
+},500)
+
+}
+
+*/
+if (localStorage.getItem('theme') === 'light') {
+  document.body.classList.add('light');
+}
+
+
+
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('light');
+  localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+});
+ const forecastData = [
+      { day: "Today", icon: "images/wt2.png", high: 34, low: 27 },
+      { day: "Thu 17", icon: "images/wt3.png", high: 31, low: 27 },
+      { day: "Fri 18", icon: "images/wt4.png", high: 33, low: 28 },
+      { day: "Sat 19", icon: "images/wt4.png", high: 33, low: 27 },
+      { day: "Sun 20", icon: "images/wt5.png", high: 34, low: 28 },
+      { day: "Mon 21", icon: "images/wt6.png", high: 32, low: 27 }
+    ];
+
+    let currentUnit = 'C';
+
+    function renderForecast() {
+      const container = document.getElementById('forecast');
+      container.innerHTML = '';
+      forecastData.forEach((day, index) => {
+        const tempHigh = convertTemp(day.high);
+        const tempLow = convertTemp(day.low);
+
+        container.innerHTML += `
+          <div class="forecast-day ${index === 0 ? 'today' : ''}">
+            ${day.day}
+            <img src="${day.icon}" alt="icon">
+            <div>${tempHigh}° ${tempLow}°</div>
+          </div>
+        `;
+      });
+    }
+
+    function convertTemp(temp) {
+      return currentUnit === 'F' ? Math.round(temp * 9/5 + 32) : temp;
+    }
+
+    function setUnit(unit) {
+      currentUnit = unit;
+      document.querySelectorAll('.unit-toggle button').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.unit-toggle button:nth-child(${unit === 'F' ? 1 : 2})`).classList.add('active');
+      document.getElementById('current-temp').textContent = convertTemp(33) + '°' + unit;
+      renderForecast();
+    }
+
+    function updateTime() {
+      const now = new Date();
+      const hrs = now.getHours() % 12 || 12;
+      const mins = now.getMinutes().toString().padStart(2, "0");
+      const ampm = now.getHours() >= 12 ? 'PM' : 'AM';
+      document.getElementById('time').textContent = `${hrs}:${mins}${ampm}`;
+    }
+
+ 
+    updateTime();
+    renderForecast();
+
+
+const moodButtons = document.querySelectorAll('.mood-btn');
+const savedMood = localStorage.getItem('mood');
+
+moodButtons.forEach(btn => {
+  if (btn.textContent.includes(savedMood)) btn.classList.add('active');
+
+  btn.addEventListener('click', () => {
+    moodButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+  });
+});
+
+
+const timer = document.getElementById('timer');
+const timerValue = document.getElementById('timer-value');
+
+if (localStorage.getItem('timer')) {
+  timer.value = localStorage.getItem('timer');
+  timerValue.textContent = timer.value;
+}
+
+timer.addEventListener('input', () => {
+  timerValue.textContent = timer.value;
+  localStorage.setItem('timer', timer.value);
+});
+
+
+</script>
+
+</body>
+</html>

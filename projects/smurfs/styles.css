@@ -1,0 +1,227 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+title{
+  border-radius: 80px;
+}
+header{
+      position:absolute;  
+    top:0;
+    left:0;
+    width:100%; 
+    margin-right:25%;
+    padding:20px 2%;
+    background-color: transparent;
+    display:flex;
+  background-color: #123890;
+  color: white;
+
+ 
+}
+
+.logo
+{
+    width:200px;
+  position:relative;
+}
+
+header ol{
+  background: #ebefef;
+  text-decoration: none;
+  border-radius: 80px;
+ padding:5px 5px 5px;
+ margin-top:50px;
+ width:500px;
+ height:40px;
+ margin-left:155px;
+ font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+header ol li{
+ margin-top:35px;
+list-style:none;
+cursor:pointer;
+display: inline;
+margin-left:25px;
+cursor: pointer;
+
+}
+
+header ol li a:link{
+text-decoration: none;
+
+}
+
+
+header ol li a
+{
+color:#fc1101;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+
+
+
+
+}
+
+header ol li a:hover
+{
+  color:rgb(19, 29, 214);
+  font-weight: bold;
+}
+
+header ol li:hover
+{
+  
+color:red;
+transform:scale(0.10);
+transition:0.5s;
+border-radius:60px;
+width:100px;
+}
+
+#navbar
+{
+  margin-left: 100px;
+  //background: red;
+ padding: 10px 20px 30px;
+ margin-top:42px;
+}
+
+#navbar a
+{
+  padding:10px 10px 10px;
+  color:white;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#navbar a:hover
+{
+  color:orange;
+}
+
+
+
+#navbar:hover{
+  color:red;
+}
+
+
+#photo
+{
+  //width:100%;
+  //height: 80%;
+margin-top:163px;
+ 
+
+
+}
+
+#smurf-charater h1
+{
+color: #f0f4f4;
+height: 50px;
+font-size: 40px;
+font-weight: 700;
+}
+
+
+#fan
+{
+  font-size: 40px;
+}
+.main{
+
+
+}
+.cards
+{
+  
+  width:20%;
+  height: 2%;
+display: inline-block;
+
+
+  border-radius: 5px;
+  margin: 40px;
+  box-shadow: 2px 2px 10px gray;
+transition:0.50s;
+}
+
+
+.cards:hover{
+
+  box-shadow: 2px 2px 10px black;
+  background:black;
+color:white;
+}
+.image img{
+  width:100%;
+   border-radius: 5px;
+
+  
+}
+
+.title
+{
+  text-align: center;
+  margin-top: 5px;
+  font-family:arial;
+}
+
+.des
+{
+  text-align: center;
+  padding:10px;
+  font-family:arial;
+}
+  button
+{
+    background-color: #1ab188;
+ 
+  color: white;
+  padding: 5px;
+  color: whitesmoke;
+  font-weight: 700;
+   text-align: center;
+  
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  transform:0.3s ease;
+  cursor: pointer;
+ 
+}
+
+button li a{
+  text-decoration: none;
+  color: #f0f4f4;
+ 
+}
+
+button li{
+  list-style: none;
+}
+
+#trailer
+{
+  width:50%;
+  margin-top:50px;
+ 
+
+}
+
+video
+{
+  width:200%;
+  border-radius: 10px;
+}

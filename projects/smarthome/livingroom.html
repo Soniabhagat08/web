@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Living Room </title>
+    <link rel="icon" type="image" href="images/living2.png">
+    
+    
+</head>
+<style>
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1c1c1e;
+      color: white;
+      transition: 0.3s;
+      overflow-x: hidden;
+    }
+
+#para
+{
+    padding:1px;
+    margin-left:25px;
+    font-size: 44px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+#pic
+{
+    border-radius: 50px;
+}
+
+   
+ .control-panel {
+      display: flex;
+      gap: 20px;
+    }
+
+    .device {
+      background-color: #2b2b2b;
+      color: white;
+      width: 520px;
+      height: 100px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .device.on {
+      background-color: orange;
+      color: black;
+      box-shadow:rgb(82, 74, 74) 0px 5px 5px 5px;
+    }
+
+    .device .icon {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .device .status {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    
+    .device.off .icon {
+      opacity: 0.6;
+    }
+
+
+    /* --- MOBILE RESPONSIVE--- */
+    @media (max-width: 600px) {
+      body{
+        overflow-x: hidden;
+      }
+#pic
+{
+  width:400px;
+  height:400px;
+}
+.control-panel {
+      display: flex;
+      gap: 20px;
+      display: block;
+      
+ 
+
+    }
+.device{
+  margin-bottom:20px;
+ 
+  width:400px;
+}
+      
+    }
+
+</style>
+
+
+<body>
+    <div id="para">
+    <p>Living Room 🛋️</p>
+</div>
+ <section class="room-gallery">
+    
+  
+     
+    <div class="room-card">
+      <img id="pic" src="images/livingr1.png" width="1480" height="600" alt="Living Room"/>
+         <h2 style="margin-left:20px;">Control Devices 🕹️</h2>
+    </div>
+  </section>
+
+
+<div class="control-panel">
+  
+    <div class="device on" onclick="toggleDevice(this)">
+      <div class="icon">💡</div>
+      <div>Light Bulbs</div>
+      <div class="status">On</div>
+    </div>
+
+  <div class="device off" onclick="toggleDevice(this)">
+      <div class="icon">☢  </div>
+      <div>Fan</div>
+      <div class="status">Off</div>
+    </div>
+
+    <div class="device off" onclick="toggleDevice(this)">
+        
+      <div class="icon"> <img style="height: 40px;" src="images/ac.png"> </div>
+      <div>Air Conditioner  </div>
+      <div class="status">Off</div>
+    </div>
+    <div class="device off" onclick="toggleDevice(this)">
+      <div class="icon">📺</div>
+      <div>TV</div>
+      <div class="status">Off</div>
+    </div>
+  
+
+      <div class="device off" onclick="toggleDevice(this)">
+      <div class="icon"><img style="height: 40px;" src="images/lamp.png">  </div>
+      <div>Table Lamp</div>
+      <div class="status">Off</div>
+    </div>
+
+ <div class="device off" onclick="toggleDevice(this)">
+      <div class="icon"> 🎵</div>
+      <div>Home Theatre</div>
+      <div class="status">Off</div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDevice(el) {
+      const isOn = el.classList.contains("on");
+      el.classList.toggle("on", !isOn);
+      el.classList.toggle("off", isOn);
+      el.querySelector(".status").textContent = isOn ? "Off" : "On";
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
