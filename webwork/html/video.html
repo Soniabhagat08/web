@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+<title> Media </title>
+
+<style>
+
+
+
+
+body
+{
+text-align:center;
+}
+
+#close{
+  
+    padding: 10px;
+    margin-left:-80%;
+    border-radius: 80px;
+    justify-content: center;
+   
+
+   
+}   
+
+</style>
+
+
+
+
+<body>
+
+    
+<div>
+<h1 style="color:teal;background:red;padding:5px;widht:6px;"> Media in html</h1>
+
+<!--
+
+Supported video format
+autoplay,controls,loop,muted
+
+
+There are three supoorted nvideo formates in HTML, Mp4, WebM and OGG.
+Brower    MP4   WebM   Ogg
+Edge      Yes   Yes   Yes
+Chrome    Yes   Yes   Yes
+Firefox   Yes   Yes   Yes
+Safari   Yes    Yes   No
+Opera    Yes    Yes   Yes
+-->
+<header>
+    <a href="work.html" id="close">
+<img class="pic" src="Photos/close.png" width="30" height="30">
+</a>
+</header>
+
+
+<video  width="1100" height="600" controls autoplay>
+
+<source src ="video/v1.mp4" type="video/mp4">
+your browser does not support the video tag.
+
+<!--
+Supported Audio
+poster,autoplay,control,loop,muted
+Browser   MP3  WAV  OGG
+Edge IE   YES  YES  YES
+Chrome    YES  YES  YES
+Firefox   YES  YES  YES
+Safari    YES  YES  NO
+Opera     YES  YES  YES
+-->
+
+
+<audio controls autoplay muted>
+<source src="audio/a1.mp3 type="audio/mp3">
+your browser does not support the audio tag.
+
+
+
+
+
+</video>
+
+
+</div>
+</body>
+</html>

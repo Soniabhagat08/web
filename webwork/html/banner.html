@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+ 
+
+<head><title> Banner Responsive </title></head>
+
+
+<style>
+@keyframes ani1
+{
+10%{left:0%}
+20%{left:0%}
+30%{left:-18%;}
+40%{left:-18%;}
+50%{left:-36%;}
+60%{left:-36%;}
+70%{left:-54%;}
+80%{left:-54%;}
+90%{left:-72%;}
+100%{left:-72%;}
+
+}
+
+
+body
+{
+margin:0px;
+padding:0px;
+overflow-x:hidden;
+}
+
+
+header
+{
+width:600%;
+height:400px;
+margin:auto;
+
+}
+.pic
+{
+width:18%;
+height:400px;
+position:relative;
+top:5px;
+margin-left:-10px;               
+box-shadow: 10px 10px 10px gray;
+animation:ani1 12s infinite;
+
+
+}
+
+#mask
+{
+overflow:hidden;
+margin:auto;width:90%;height:600px;
+}
+
+
+
+#close{
+  
+    padding: 10px;
+    margin-left:-80%;
+    border-radius: 80px;
+    justify-content: center;
+     
+}  
+
+ 
+
+#name
+{
+    width:30%;
+    background: rgb(190, 56, 38);
+    font-size: 50px;
+    text-align: center;
+    margin-left: 33%;
+    border-radius: 10px;
+    color:rgb(217, 237, 237);
+margin-bottom: 20px;
+}
+
+</style>
+
+
+
+
+
+
+
+<body>
+
+    <div id="close">
+    <a href="work.html">
+<img src="Photos/close.png" width="30px">
+</a>
+</div>
+
+
+<div id="name">
+Responsive Banner   
+</div>
+
+    
+<div id="mask">
+
+<header>
+
+<img src="Photos/a1.jpg" class="pic">
+<img src="Photos/a2.jpg" class="pic">
+<img src="Photos/a3.jpg" class="pic">
+<img src="Photos/a5.jpg" class="pic">
+<img src="Photos/a6.jpg" class="pic">
+</header>
+</div>
+
+
+</body>
+<html>

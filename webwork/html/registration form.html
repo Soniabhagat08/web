@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Tip</title>
+        
+</head>
+<style>
+    #close
+    {
+margin-top:-700px;
+margin-left: ;
+
+    }
+    
+body
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   height:100vh;
+   background-color: #0b706f;
+   //background:url(Photos/reg2.jpg);
+   background-size:cover;
+   
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    max-width: 450px;
+    background: #24323d;
+    padding:10px 30px 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+h1{
+    font-size:40px;
+    color:#1ab188;
+    font-weight:700;
+    letter-spacing:0.3px;
+    text-align:center;
+}
+.signin{
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+}
+.signin a
+{
+    color:#65d6b8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.signin a:hover{
+    color:#61e926
+}
+
+.form-group
+{
+    display:flex;
+    width:100%;
+    gap:6px;
+}
+.form label{
+    position: relative;
+}
+
+
+.form label input{
+    width: 100%;
+padding:10px 10px 20px 10px;
+outline:none;
+border-radius:20px;
+
+}
+
+.form label input + span{
+    position: absolute;
+left:10px;
+top:15px;
+color:#85b5da;
+font-size:0.9em;
+cursor: text;
+transition:0.3s ease;
+
+}
+
+.form label input:placeholder-shown+span
+{
+    top:15px;
+    font-size:0.9em;
+
+}
+
+
+.form label input:focus + span,
+.form label input:valid + span
+{
+    top:30px;
+    font-size:0.7em;
+    font-weight: 700;
+}
+
+.form label input:valid + span
+{
+    color: red;
+}
+
+.form label.icon
+{
+    cursor: pointer;
+  
+}
+#btn
+{
+    background-color: #1ab188;
+  border: none;
+  color: white;
+  padding: 10px;
+  color: whitesmoke;
+  font-weight: 700;
+   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 10px;
+  transform:0.3s ease;
+  cursor: pointer;
+  margin-left:12px;
+}
+#btn:hover{
+    background: #1ec79a;
+    transition: 0.3s;
+}
+</style>
+<body>
+<a href="work.html" id="close">
+<img src="Photos/close.png" width="30px">
+</a>
+   
+<form class="form">
+
+<h1>Resgiter</h1>
+
+<div class="form-group">
+    <label>
+    <input  type="text" required>
+<span>User Name</span>
+</label>
+
+
+<label>
+    <input  type="text" required>
+<span>First Name</span>
+</label>
+<br>
+
+<label>
+ <input type="text" required>
+<span> Last Name</span>
+</label>
+</div>
+<label>
+ <input type="text" required>
+<span> E-Mail</span>
+</label>
+
+<label>
+ <input  type="password" required>
+<span> Password</span>
+<span class="icon" id="togglePassword">
+<i class="far fa-eye-slash"></i>
+</span>     
+</label>
+
+<label>
+ <input  type="password" id="confirmpassword" required>
+<span> Confirm Password</span>
+<span class="icon" id="togglePassword">
+
+</span>     
+</label>
+
+<button class="submit" id="btn" title="click to submit">Submit</button>
+<button class="Reset" id="btn">Reset</button>
+
+<p class="signin">
+Already have an account ?
+<a href="#" class="sign">Signin</a>
+
+</p>
+
+</form>
+ 
+
+</div> 
+</body>
+</html>
