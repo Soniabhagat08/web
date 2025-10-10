@@ -19,7 +19,35 @@
   margin: 0;
   box-sizing: border-box;
 }
+.des{
+    font-size:3.5em;
 
+}
+
+.des> .des1
+{
+    position: relative;
+    display: inline-block;
+    color: #ff8800;
+    height: 1.2em;
+    vertical-align:bottom;
+    overflow: hidden;
+
+}
+
+.des> .des1> .des2{
+    display:block;
+    animation: animateWords 3s infinite ease;
+}
+
+@keyframes animateWords
+{
+0%{transform: translateY(0%);}
+25%{transform: translateY(-100%);}
+50%{transform: translateY(-200%);}
+75%{transform: translateY(-300%);}
+100%{transform: translateY(-400%);}
+}
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -482,4 +510,5 @@ border-radius: 5px;
   .portfolio__banner {
     grid-template-columns: repeat(3, 1fr);
   }
+
 }
