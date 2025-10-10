@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #00bcd4; /* Cyan/Aqua - Futuristic Pop */
-    --secondary-color: #1a237e; /* Deep Indigo - Base Dark */
+    --primary-color: #00bcd4; 
+    --secondary-color: #1a237e; 
     --text-light: #f4f4f4;
     --text-dark: #333;
-    --card-bg: #263238; /* Dark Slate for innovation cards */
+    --card-bg: #263238;
     --font-heading: 'Orbitron', sans-serif;
     --font-body: 'Roboto', sans-serif;
 }
@@ -313,3 +313,4 @@ footer {
         margin-bottom: 15px;
     }
 }
+
