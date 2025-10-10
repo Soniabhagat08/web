@@ -1,0 +1,315 @@
+:root {
+    --primary-color: #00bcd4; /* Cyan/Aqua - Futuristic Pop */
+    --secondary-color: #1a237e; /* Deep Indigo - Base Dark */
+    --text-light: #f4f4f4;
+    --text-dark: #333;
+    --card-bg: #263238; /* Dark Slate for innovation cards */
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    background-color: var(--text-light);
+    color: var(--text-dark);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+/* --- NAVIGATION --- */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(26, 35, 126, 0.7), rgba(0, 188, 212, 0.4)), url('https://i.imgur.com/your-futuristic-map-image.jpg') no-repeat center center/cover; 
+    /* NOTE: Replace with a real futuristic India map image URL for production */
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-bottom: 8px solid var(--primary-color);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(26, 35, 126, 0.95);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Content */
+.hero-content {
+    margin-top: -100px; /* Adjust for fixed nav */
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    color: var(--text-light);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin: 20px 0 40px;
+    color: #a7ffeb; /* Light Aqua */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #00e5ff;
+    transform: scale(1.05);
+}
+
+.secondary-button {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    margin-top: 30px;
+}
+
+.secondary-button:hover {
+    background-color: #3f51b5;
+}
+
+/* --- SECTIONS --- */
+.section {
+    padding: 80px 0;
+}
+
+.dark-section {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+.dark-section h2, .dark-section h3 {
+    color: var(--primary-color);
+}
+
+.intro-paragraph, .summary-paragraph {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+/* Vision - Pillars Grid */
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.pillar-card {
+    background: #e0f7fa; /* Light cyan background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pillar-card .icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Innovations - Dark Cards */
+.innovation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.innovation-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+.innovation-card:hover {
+    background-color: #37474f;
+}
+
+.innovation-card h3 {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #101538; /* Very Dark Blue */
+    color: var(--text-light);
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-icon {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* ================================== */
+/* MOBILE RESPONSIVENESS     */
+/* ================================== */
+
+@media (max-width: 768px) {
+    /* General adjustments */
+    .container {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    /* Header/Nav Adjustments */
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5%;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links li a {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    .logo {
+        margin-bottom: 5px;
+    }
+
+    /* Grid Adjustments */
+    .pillars-grid, .innovation-grid {
+        grid-template-columns: 1fr; /* Single column stack for mobile */
+    }
+
+    /* Footer Adjustments */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info, .footer-note {
+        margin-bottom: 15px;
+    }
+}
