@@ -3,10 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital India </title>
+    <link rel="stylesheet" href="style.css">
+    <title>Digital India 2047: 100 Years of Progress</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS will go here (Internal Style Sheet for simplicity) */
+        /* See the CSS section below */
+    </style>
 </head>
 <body>
-    <h1>Digitaal India in 2047</h1>
+
+    <header id="home">
+        <nav>
+            <div class="logo">DIGITAL <br><span style="color: antiquewhite;">INDIA 2047</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#innovations">Innovations</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>DIGITAL INDIA 2047</h1>
+            <p class="tagline">“Celebrating 100 Years of Progress Through Technology”</p>
+            <a href="#vision" class="cta-button">EXPLORE THE FUTURE</a>
+        </div>
+    </header>
+
     
+
+    <section id="vision" class="section">
+        <div class="container">
+            <h2>A Century of Digital Progress</h2>
+            <p class="intro-paragraph">In 2047, India is a **global leader** in **AI**, **green tech**, **digital education**, **smart cities**, and **inclusive
+                 technology**. Our citizens connect seamlessly, work dynamically, and live healthier, more sustainable lives. Technology has eliminated the digital
+                  divide, making access to opportunities a fundamental right and positioning India as the world's most vibrant and inclusive digital democracy.</p>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <span class="icon">🏙️</span>
+                    <h3>Smart Cities & Sustainable Living</h3>
+                    <p>Automated traffic, modular housing, decentralized solar power, and clean energy grids ensure zero-emission urban living.</p>
+                </div>
+                <div class="pillar-card">
+                    <span class="icon">🧠</span>
+                    <h3>AI-powered Health & Education</h3>
+                    <p>Personalized, preventive medicine via AI diagnostics; hyper-realistic AR/VR classrooms for remote, quality education accessible to every student.</p>
+                </div>
+                <div class="pillar-card">
+                    <span class="icon">🚀</span>
+                    <h3>Clean & Connected Transport</h3>
+                    <p>Hyperloop networks, autonomous electric vehicles, and drone logistics managed by a national AI grid for fast and zero-carbon travel.</p>
+                </div>
+                <div class="pillar-card">
+                    <span class="icon">👨‍🌾</span>
+                    <h3>Digital Villages (Gram-Net)</h3>
+                    <p>100% satellite 6G connectivity enables rural entrepreneurs, telemedicine, and digital markets, ending rural-urban inequality.</p>
+                </div>
+                <div class="pillar-card">
+                    <span class="icon">✅</span>
+                    <h3>100% Digital Governance</h3>
+                    <p>All government services are on a transparent, tamper-proof Blockchain ledger, ensuring instant, corruption-free public service delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="innovations" class="section dark-section">
+        <div class="container">
+            <h2>Innovations: Technologies Shaping Our Future</h2>
+            
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <h3>6G Internet & Satellite Connectivity</h3>
+                    <p>Universal, terahertz-speed connectivity powered by a low-orbit satellite constellation, guaranteeing digital access for every citizen.</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>AI in Agriculture (Agri-AI)</h3>
+                    <p>Predictive crop management, drone-based irrigation, and automated harvesting for maximum yield, ensuring food security and farmer prosperity.</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>Robotics in Hospitals</h3>
+                    <p>Micro-robotics for non-invasive surgery, automated patient care, and AI-driven diagnostic robots drastically improve healthcare access.</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>Blockchain for Governance</h3>
+                    <p>Secure, transparent digital identity and land records, eliminating bureaucracy and corruption. Direct digital voting channels on the blockchain.</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>AR/VR in Education & Skill-Tech</h3>
+                    <p>Immersive learning environments that simulate real-world scenarios for vocational training and hands-on skill development, creating a future-ready workforce.</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>Renewable Energy Grid (Re-Grid)</h3>
+                    <p>A nationwide smart grid powered 90% by solar and wind energy. AI optimizes distribution, achieving net-zero carbon emissions nationally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="goals" class="section">
+        <div class="container">
+            <h2>Our Goals: Securing the Next Century</h2>
+            <p class="summary-paragraph">By 2047, Digital India’s goal is to be a fully sustainable, globally connected, and socially equitable nation, where technology serves as the great equalizer. We envision a society where every Indian is digitally empowered to contribute to the nation’s success.</p>
+            <a href="#home" class="cta-button secondary-button">↑ Back to Top</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="contact-info">
+                <strong>Connect with the Vision:</strong> 
+                <p>Email: <a href="mailto:vision@digitalindia2047.in">vision@digitalindia2047.in</a></p>
+                <p>Follow us on <span class="social-icon">🌐 Digi-Connect</span></p>
+            </div>
+            <div class="footer-note">
+                <p>A 100-Year Independence Initiative | Designed with Future-Tech UX/UI Principles</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scrolling Script
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
