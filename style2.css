@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 .des{
-    font-size:1.5em;
+    font-size:0.5em;
 
 }
 
@@ -29,7 +29,7 @@
     position: relative;
     display: inline-block;
     color: #ff8800;
-    height: 1.2em;
+    height: 1.0em;
     vertical-align:bottom;
     overflow: hidden;
 
@@ -512,4 +512,5 @@ border-radius: 5px;
   }
 
 }
+
 
