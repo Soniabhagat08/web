@@ -11,6 +11,18 @@
     var(--primary-color),
     var(--secondary-color)
   );
+
+
+  /* Extra mobile optimization */
+@media (max-width: 600px) {
+    .design {
+        font-size: clamp(1rem, 6vw, 1.8rem);
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+}
   --max-width: 1200px;
 }
 
@@ -188,6 +200,7 @@ position: relative;
 
 margin-top:100px ;
 
+
 }
 
 .header__image img {
@@ -198,24 +211,15 @@ margin-top:100px ;
 }
 
 
-.header__image::after {
-  position: absolute;
-  content: "SONIA BHAGAT";
-  letter-spacing: 1.1rem;
-  opacity: 0.5;
-  right: -2rem;
-  top: 50%;
-  transform: translate(50%, -50%) rotate(90deg);
-}
-
 
 .home-content h1{
-    font-size:48px;
+   
     font-weight: 700;
     margin-top: -10px;
     margin-bottom: 2rem;
     
 }
+
 .home-content h2{
     font-size:32px;
     font-weight:700;
@@ -228,6 +232,48 @@ margin-top:100px ;
   font-size: 48px;
   margin-bottom: 1rem;
 }
+
+
+.design
+{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 10vh;
+  
+    padding:10px;
+  font-family: "Geologic",sans-serif;           
+}
+
+.design #main
+{
+    position: relative;
+    display: inline-block;
+    height: 2rem;
+      background: linear-gradient(to bottom, #EB5E5B, #F5A451); 
+    vertical-align: bottom;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.design #main .text
+{
+    display: block;
+    margin-top: -2px;
+    animation:animateWords 6s infinite ease;
+    animation-delay: 0s; 
+
+}
+
+@keyframes animateWords
+{
+    0%{transform: translateY(0%);}
+    25%{transform: translateY(-100%);}
+    50%{transform: translateY(-200%);}
+    75%{transform: translateY(-300%);}
+    100%{transform: translateY(-400%);}
+}
+
 
 .about__container {
   display: grid;
