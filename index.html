@@ -1,242 +1,1005 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style2.css" />
-    <title>Portfolio | Sonia Bhagat</title>
-  </head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fearless -  Workshop Landing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
   <body>
-    <nav class="nav">
-      <div class="nav__bar">  
-        <a href="#"><span class="logo nav__logo">S</span> Sonia Bhagat</a>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-3-line"></i>
-        </div>
-      </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="webwork/webwork.html">Webwork</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact" class="btn">Contact</a></li>
-      </ul>
-      <a href="#contact" class="btn btn__large">Contact</a>
-    </nav>
-    <header class="section__container header__container" id="home">
-      <div class="header__image">
-        <img src="images/sonia.jpg" alt="header" />
-      </div>
-      <div class="header__content">
-        <div class="home-content">
-          <h3>Hello,It's Me</h3>
-            <h1> Sonia Bhagat</h1>
-           <body>
-    <h2 class="design">And I'm a &nbsp
-        <span id="main">
-              <span class="text">UI/UX DESIGNER</span> 
-              <span class="text">GRAPHICS DESIGNER</span> 
-              <span class="text">FRONTEND DEVELOPER</span> 
-              <span class="text">FREELANCER</span> 
-            </span></h2> 
-            <p class="section__description">I’m currently diving into the world of UI/UX design.I'm passionate about creating seamless,  user-friendly experiences that combine both functionality and aesthetic appeal.
-                I love the creative challenge of making technology more intuitive and accessible.<br>   
-            </p>
-        </div>      
-      </div>
-    </header>
 
+<section class="hero d-flex flex-column align-items-center justify-content-center text-center px-3">
 
-
-    <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="images/bg.png" alt="bg" class="about__bg-1" />
-        <img src="images/bg.png" alt="bg" class="about__bg-2" />
-        <img src="images//sonia2.jpg" alt="about" class="about__img" />
-      </div>
-      <div class="about__content">
-        <h2 class="section__header">Bit About Me</h2>
-        <p class="section__description">
-          A passionate web developer with a creative flair and a knack for
-          turning visions into reality. My journey in web development began with
-          a fascination for coding and design, and it has evolved into a career
-          where I blend aesthetics with functionality. With a focus on user
-          experience and a commitment to staying updated with the latest
-          industry trends, I'm dedicated to creating web solutions that not only
-          meet but exceed expectations.
-          
-        </p>
-    </section>
-
-
-
-
-    <section class="section__container service__container" id="service">
-      <h2 class="section__header">My Best Services</h2>
-      <div class="service__grid">
-        <div class="service__card">
-          <span><i class="ri-window-fill"></i></span>
-          <h4>Website Design</h4>
-          <p>
-            We craft user-friendly interfaces that engage visitors and help you
-            achieve your online goals with minimum efforts.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-search-eye-line"></i></span>
-          <h4>User Research & Analysis</h4>
-          <p>
-        Understanding user behavior, needs, and pain points.Conducting surveys,
-        interviews, and usability testing.Creating user personas and journey maps
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-database-fill"></i></span>
-          <h4>Information Architecture (IA)</h4>
-          <p>
-          Organizing content and features logically.Defining site structure 
-          and navigation flows.Ensuring intuitive user pathways.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-mac-line"></i></span>
-          <h4>Visual Design (UI Design)</h4>
-          <p>
-         Crafting aesthetically pleasing interfaces.Selecting
-          typography, color schemes, and icons.Maintaining brand 
-          consistency and accessibility.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-pass-pending-line"></i></span>
-          <h4>UX Writing & Content Strategy</h4>
-          <p>
-           Crafting user-friendly microcopy, labels, and messages.
-           Ensuring clarity and simplicity in communication.Enhancing
-            user trust and engagement through tone of voice.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-bar-chart-2-line"></i></span>
-          <h4>Performance Optimization</h4>
-          <p>
-           Streamlining user flows to reduce cognitive load.
-           Minimizing unnecessary steps or distractions.Improving 
-           loading times and interface responsiveness.
-          </p>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="section__container portfolio__container" id="portfolio">
-      <h2 class="section__header">My Portfolio</h2>
-      <p class="section__description">
-       "A creative showcase of my design journey, blending functionality with
-        visual storytelling.Each project reflects a balance of innovation and user-focused thinking."
-      </p>
-      <div class="portfolio__grid">
-        <div class="portfolio__card">
-          <a href="projects/disney/disney cruise.html" target="_blank">
-          <img src="images/pro1.jpeg" alt="portfolio" height="250" />
-         
-          </a>
-           <div class="title">
-            <h4 style="color:white;margin-left:10px;margin-top:15px;  ">Project 1 Disney Cruise Adventure(Click to View)</h4>
-
-          </div>
-        </div>
-        <div class="portfolio__card">
-          <a href="projects/f1racing/f1racing.html" target="_blank">
-          <img src="images/pro2.jpg" alt="portfolio" height="250" />
-          </a>
-           <div class="title">
-            <h4 style="color:white;margin-left:10px;margin-top:15px;  ">Project 2 F1 Racing Event (Click to View)</h4>
-
-          </div>
-        </div>
-        <div class="portfolio__card">
-          <a href="projects/smurfs/smurf.html" target="_blank">
-          <img src="images/pro3.jpg" alt="portfolio" height="250" />
-          </a>
-           <div class="title">
-            <h4 style="color:white;margin-left:10px;margin-top:15px;  ">Project 3 The Smurf (Click to View)</h4>
-
-          </div>
-        </div>
-        <div class="portfolio__card">
-          <a href="projects/smarthome/smarthome.html" target="_blank">
-          <img src="images/pro5.jpg" alt="portfolio" height="250" />
-          </a>
-          <div class="title">
-            <h4 style="color:white;margin-left:10px;margin-top:15px;  ">Project 4 Smart Home App (Click to View)</h4>
-
-          </div>
-        </div>
-        <div class="portfolio__card">
-          <a href="projects/genai/genai.html" target="_blank">
-          <img src="images/pro4.jpg" alt="portfolio" height="250" />
-          </a>
-          <div class="title">
-            <h4 style="color:white;margin-left:10px;margin-top:15px;  ">Project 5 Generative Ai (Click to View)</h4>
-
-          </div>
-        </div>
-        <div class="portfolio__card">
-          <a href="projects/di2047/digitalindia.html" target="_blank">
-          <img src="images/pro6.png" alt="portfolio" height="250" />
-          </a>
-          <div class="title">
-            <h4 style="color:white;margin-left:10px;margin-top:15px;  ">Project 6 Digital India in 2047 (Click to View)</h4>
-
-          </div>
-        </div>
-
-          <div class="portfolio__card">
-          <a href="projects/stock market/first.html" target="_blank">
-          <img src="images/stock.jpg" alt="portfolio" height="250" />
-          </a>
-          <div class="title">
-            <h4 style="color:white;margin-left:10px;margin-top:15px;  ">Project 7 Stock Market Website (Click to View)</h4>
-
-          </div>
-        </div>
-      </div>
-      
-    </section>
-
-
-
-    <section class="section__container contact__container" id="contact">
-      <div class="logo">S</div>
-      <h2 class="section__header">Let's Talk With Me!</h2>
-      <p class="section__description">
-        An open invitation to connect, and exploring collaborative opportunities
-        on my personal portfolio website.
-      </p>
-      <div class="contact__socials">
-        <a href="https://www.behance.net/soniabhagat1" target="_blank"><i class="ri-behance-fill"></i></a>
-         <a href="https://www.instagram.com/thecodingx" target="_blank"><i class="ri-instagram-fill"></i></a>
-        <a href="https://www.facebook.com/login.php/" target="_blank"><i class="ri-facebook-fill"></i></a>
-        <a href="https://web.whatsapp.com/" target="_blank"><i class="ri-whatsapp-fill"></i></a>
-        <a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a>
-        
-      </div>
-    </section>
-
-
-    <footer class="footer">
-      Copyright © 2025 Sonia Bhagat. All rights reserved.
-    </footer>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
  
+<div class="pill-wrapper">
+
+  <!-- TOP SESSION PILL -->
+  <div class="session-pill">
+    <div class="session-left">
+      <span class="status-dot green"></span>
+      <span class="session-text">2 Days Techno-Funda Session</span>
+    </div>
+
+    <span class="session-divider"></span>
+
+    <i class="bi bi-moon session-icon" id="themeToggle"></i>
+  </div>
+
+  <!-- BOTTOM CATCH PILL -->
+  <div class="catch-pill">
+    <span class="status-dot red"></span>
+    <span class="catch-text">CATCH BOTTOM OUT</span>
+  </div>
+
+</div>
+
+ 
+  <h1 class="mb-3">
+    Select Winning Stocks for<br>
+    <span class="highlight text-dark">Swing Trading</span> using Demand<br>
+    Checker
+  </h1>
+
+  <p class="mt-3">
+    Stop wasting hours on analysis. Get a
+    <span class="fw-semibold text-success">filtered list of stocks</span>
+    backed<br> by Big Player activity.
+  </p>
+
+</section>
+
+
+
+<section class="main">
+<div class="container my-5">
+
+  <div class="row g-4 align-items-start">
+
+ 
+    <div class="col-lg-6">
+
+   
+      <div class="card rounded-4 shadow-lg overflow-hidden mb-4">
+
+   
+        <div class="d-flex justify-content-between align-items-center px-3 py-2 border-bottom">
+         
+          <small class="text-muted">masterclass_preview.mp4</small>
+        </div>
+
+        
+        <div class="ratio ratio-16x9 bg-black position-relative">
+          <iframe src="https://www.youtube.com/embed/8oOKyHtha7Y"title="YouTube video" allowfullscreen class="w-100 h-100 border-0">
+          </iframe>
+
+       
+          <div class="video-overlay position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h6>Share</h6>
+            
+            <div class="d-flex justify-content-center gap-3 fs-4">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-three-dots"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="row g-3">
+
+        <div class="col-md-6">
+          <div class="info-card p-3 rounded-4 d-flex align-items-center gap-3">
+            <i class="bi bi-calendar-event fs-3 text-success"></i>
+            <div>
+              <small class="text-muted">NEXT SESSION</small>
+              <div class="fw-bold">Saturday & Sunday</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card p-3 rounded-4 d-flex align-items-center gap-3">
+            <i class="bi bi-clock fs-3 text-success"></i>
+            <div>
+              <small class="text-muted">START TIME</small>
+              <div class="fw-bold">8:00 PM & 12:30 PM</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+  
+    <div class="col-lg-6">
+
+      <div class="card p-4 rounded-4 shadow-lg border-0">
+
+    
+        <div class="d-flex align-items-center mb-4">
+          <span class="bg-warning me-3" style="width:4px;height:28px;"></span>
+          <h4 class="fw-bold mb-0">2 Days Setup Blueprint Includes:</h4>
+        </div>
+
+    
+        <ul class="list-unstyled">
+
+          <li class="d-flex gap-3 mb-3">
+            <span class="icon-circle bg-success bg-opacity-10 text-success">
+              <i class="bi bi-check-lg"></i>
+            </span>
+            4 Swing & Positional Setups
+          </li>
+
+          <li class="d-flex gap-3 mb-3">
+            <span class="icon-circle bg-success bg-opacity-10 text-success">
+              <i class="bi bi-check-lg"></i>
+            </span>
+            Learn to Catch Bottom of the stock
+          </li>
+
+          <li class="d-flex gap-3 mb-3">
+            <span class="icon-circle bg-success bg-opacity-10 text-success">
+              <i class="bi bi-check-lg"></i>
+            </span>
+            Track Big player Activity Using Demand Checker
+          </li>
+
+          <li class="d-flex gap-3 mb-3">
+            <span class="icon-circle bg-success bg-opacity-10 text-success">
+              <i class="bi bi-check-lg"></i>
+            </span>
+            How to trail the stock using different methods
+          </li>
+
+          <li class="d-flex gap-3 mb-3">
+            <span class="icon-circle bg-danger bg-opacity-10 text-danger">
+              <i class="bi bi-x-lg"></i>
+            </span>
+            No chart patterns, trendline, or price action
+          </li>
+
+        </ul>
+
+       
+        <div class="alert alert-warning text-center rounded-3 fw-semibold my-4">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>
+          Warning: Strategies are highly effective.
+        </div>
+
+        
+        <button class="btn btn-dark w-100 py-3 rounded-3 fs-5 fw-semibold">
+          Reserve My Seat <i class="bi bi-arrow-right ms-2"></i>
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+<section class="analyzing">
+  <div class="container">
+    <div class="text-center mb-5">
+    <h1 class="hero-title">
+      Master The <span> Demand Checker</span>
+    </h1>
+    <p class="text-muted">
+      A complete <strong>Techno-Funda</strong> approach to finding high-momentum stocks before the rally begins.
+    </p>
+  </div>
+
+  <div class="d-flex justify-content-center mb-5">
+    <div class="app-window w-75">
+
+      <div class="app-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <small class="ms-3 text-muted">stockbar_demand_checker_v2.exe</small>
+      </div>
+
+      <div class="p-4">
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div class="meter-card">
+              <h6>Big Player Meter</h6>
+             <img src="images/meter1.png" class="image-fluid">
+              
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="meter-card">
+              <h6>Growth Meter</h6>
+             <img src="images/meter2.png" class="image-fluid">
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="meter-card">
+              <h6>Momentum Meter</h6>
+              <img src="images/meter3.png" class="image-fluid">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+<div class="row g-4 mb-5">
+
+    <div class="col-md-3">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-funnel"></i></div>
+        <h6>Fundamental Filtering</h6>
+        <p class="text-muted small">
+          Filter stocks using fundamentals & instantly shortlist winners.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-bar-chart"></i></div>
+        <h6>Retailer Trap Setup</h6>
+        <p class="text-muted small">
+          Master the 3-step setup designed for Swing & Positional trades.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+        <h6>Reversal Trading</h6>
+        <p class="text-muted small">
+          Identify trend reversals and confirm precise entries.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+        <h6>Big Player Confirmation</h6>
+        <p class="text-muted small">
+          Validate trades using institutional demand & momentum.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+  <div class="text-center">
+    <a href="#" class="btn cta-btn">
+      Start Learning Now at ₹99 <i class="bi bi-arrow-right"></i>
+    </a>
+    <p class="text-muted small mt-2">
+      <strong>Instant Access</strong> · 100% Satisfaction Guarantee
+    </p>
+  </div>
+
+</div>
+</div>
+</section>
+
+
+<!--
+<section class="session">
+<h1 class="text-center fw-bold mt-5 pt-5">This Session Is <span class="text-success">Designed For Yourself</span></h1>
+<div class="container">
+
+
+  <div class="col-md6">
+    <div class="d-flex align-items-center p-4 border rounded-3 bg-light">
+          <span class="me-3 danger-icon">?</span>
+     <p class="mb-0 fw-medium">
+            You are struggling to select best stocks for Swing Trading
+          </p>
+        </div>
+  </div>
+  
+</div>
+
+  <div class="col-md6">
+    <div class="d-flex align-items-center p-4 border rounded-3 bg-light">
+          <span class="me-3 danger-icon">?</span>
+     <p class="mb-0 fw-medium">
+            You are Entering At Top and Holding Loss Making Trades
+          </p>
+        </div>
+  </div>
+  
+</div>
+<div class="col-md6">
+    <div class="d-flex align-items-center p-4 border rounded-3 bg-light">
+          <span class="me-3 danger-icon">?</span>
+     <p class="mb-0 fw-medium">
+           You don't know how Big Players are entering in a Stock
+          </p>
+        </div>
+  </div>
+  
+</div>
+
+<div class="col-md6">
+    <div class="d-flex align-items-center p-4 border rounded-3 bg-light">
+          <span class="me-3 danger-icon">?</span>
+     <p class="mb-0 fw-medium">
+            You don't know how to hold and when to exit
+          </p>
+        </div>
+  </div>
+  
+</div>
+
+</div>
+
+</section>
+-->
+
+
+
+
+<section class=" session py-5">
+  <div class="container">
+
+    
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">
+        The Session Is <span class="text-success">Designed For You If...</span>
+      </h2>
+      <div class="mx-auto mt-3"
+           style="width:80px;height:4px;background:#f4b400;border-radius:10px;">
+      </div>
+    </div>
+
+    
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-6">
+        <div class="d-flex align-items-center p-4 border rounded-3 bg-light">
+          <span class="me-3 danger-icon">?</span>
+          <p class="mb-0 fw-medium">
+            You are struggling to select best stocks for Swing Trading
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex align-items-center p-4 border rounded-3 bg-light">
+          <span class="me-3 danger-icon">?</span>
+          <p class="mb-0 fw-medium">
+            You are Entering At Top and Holding Loss Making Trades
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex align-items-center p-4 border rounded-3 bg-light">
+          <span class="me-3 danger-icon">?</span>
+          <p class="mb-0 fw-medium">
+            You don't know how Big Players are entering in a Stock
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex align-items-center p-4 border rounded-3 bg-light">
+          <span class="me-3 danger-icon">?</span>
+          <p class="mb-0 fw-medium">
+            You don't know how to hold and when to exit
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="p-4 text-center ">
+<div class="mx-auto mb-4" style="max-width: 720px;">
+      <div class="card border-1 shadow-sm rounded-4 p-4">
+        <h5 class="fw-bold mb-1">After Attending This</h5>
+        <h5 class="fw-bold text-success mb-3">Techno-Funda Session</h5>
+
+        <p class="text-muted mb-0">
+          You will be able to
+          <span class="fw-semibold text-dark bg-light px-2 py-1 rounded">
+            filter and Select Winning Stocks
+          </span>
+          and by following the Strategy, you
+          <span class="fw-semibold text-dark bg-light px-2 py-1 rounded">
+            make decent returns!
+          </span>
+        </p>
+      </div>
+    </div>
+
+   
+    <button class="btn btn-warning fw-bold px-5 py-3 rounded-3 shadow-sm">
+      REGISTER NOW at ₹99 →
+    </button>
+
+  </div>
+</section>
+
+
+
+<section class="py-5">
+  <div class="container text-center">
+
+ 
+    <div class="mb-3">
+      <span class="badge-limited">⏱ LIMITED TIME</span>
+    </div>
+
+    <h2 class="fw-bold mb-4">
+      Register Now Before Offer <span class="highlight text-dark">Ends!</span>
+    </h2>
+
+
+
+     <div class="row justify-content-center">
+      <div class="col-lg-6">
+
+        <div class="offer-card bg-white p-4">
+
+          <h5 class="fw-bold mb-1"> Attend 2 days Techno-Funda Session for <span class="text-success">Rs.99</span></h5>
+
+          <p class="text-muted mb-4">Offer Expires in</p>
+
+
+  <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+            <div class="timer-box">
+              <div class="timer-number" id="minutes">03</div>
+              <div class="timer-label">MINUTES</div>
+            </div>
+
+            <div class="fw-bold fs-3">:</div>
+
+            <div class="timer-box">
+              <div class="timer-number text-warning" id="seconds">54</div>
+              <div class="timer-label">SECONDS</div>
+            </div>
+          </div>
+
+          <button class="btn cta-btn px-5 py-3 rounded-3">
+            REGISTER NOW at ₹99 →
+          </button>
+
+          <p class="text-muted small mt-3">
+            100% Satisfaction Guarantee
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="py-5 dot-bg">
+  <div class="container text-center">
+
+    
+    <div class="mb-3">
+      <span class="risk-badge">⚠️ RISK WARNING: F&O LOSSES</span>
+    </div>
+
+    
+    <h2 class="fw-bold headline mb-3">
+      STOP F&O <span>Until you make Profit in Equity</span>
+    </h2>
+
+    
+    <div class="d-flex justify-content-center gap-2 mb-4">
+      <span class="tag">📈 TREND</span>
+      <span class="tag">#ShifttoEquity ↑</span>
+    </div>
+
+    
+    <div class="row g-3 justify-content-center mb-4">
+      <div class="col-md-5">
+        <div class="feature-box d-flex align-items-center gap-2">
+          <div class="check-icon">✓</div>
+          Start Making Consistent Profits in Equity
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="feature-box d-flex align-items-center gap-2">
+          <div class="check-icon">✓</div>
+          Get the Best Screeners to Filter out Best Stocks
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="feature-box d-flex align-items-center gap-2">
+          <div class="check-icon">✓</div>
+          No more Losses in F&O like Gambling
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="feature-box d-flex align-items-center gap-2">
+          <div class="check-icon">✓</div>
+          Following Proper Risk-Reward and Rules
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="feature-box d-flex align-items-center gap-2">
+          <div class="check-icon">✓</div>
+          Trade Where Big Players are entering
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="feature-box d-flex align-items-center gap-2">
+          <div class="check-icon">✓</div>
+          Use the Technology to Reduce your Manual Efforts
+        </div>
+      </div>
+    </div>
+
+    
+    <button class="btn cta-btn px-5 py-3 rounded-3">
+      REGISTER NOW at ₹99 →
+    </button>
+
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">
+        Fearless <span class="text-success">Family</span> Stories
+      </h2>
+      <p class="text-muted">Real results from real traders who mastered the system.</p>
+      <div class="mx-auto mt-2" style="width:60px;height:4px;background:#fbbf24;border-radius:2px;"></div>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-6">
+        <div class="story-card">
+          <div class="browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="url">https://fearless-community.com/success/1</span>
+          </div>
+
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+          </div>
+
+          <div class="card-footer-custom">
+            <div class="d-flex gap-2">
+              <span class="badge bg-danger">Student Review</span>
+              <span class="badge bg-success">✔ Verified</span>
+            </div>
+            <div class="text-warning">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-lg-6">
+        <div class="story-card">
+          <div class="browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="url">https://fearless-community.com/success/2</span>
+          </div>
+
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+          </div>
+
+          <div class="card-footer-custom">
+            <div class="d-flex gap-2">
+              <span class="badge bg-danger">Student Review</span>
+              <span class="badge bg-success">✔ Verified</span>
+            </div>
+            <div class="text-warning">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="story-card">
+          <div class="browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="url">https://fearless-community.com/success/3</span>
+          </div>
+
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+          </div>
+
+          <div class="card-footer-custom">
+            <div class="d-flex gap-2">
+              <span class="badge bg-danger">Student Review</span>
+              <span class="badge bg-success">✔ Verified</span>
+            </div>
+            <div class="text-warning">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="story-card">
+          <div class="browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="url">https://fearless-community.com/success/4</span>
+          </div>
+
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+          </div>
+
+          <div class="card-footer-custom">
+            <div class="d-flex gap-2">
+              <span class="badge bg-danger">Student Review</span>
+              <span class="badge bg-success">✔ Verified</span>
+            </div>
+            <div class="text-warning">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="py-5">
+<div class="container">
+
+
+  <div class="text-center mb-5">
+    <span class="section-tag">COMMUNITY</span>
+    <h2 class="fw-bold mt-3">
+      About <span class="text-success">Fearless Community</span>
+    </h2>
+    <p class="highlight fw-semibold">#NeverSeenBefore</p>
+  </div>
+
+  <div class="row align-items-center g-4">
+
+   
+    <div class="col-lg-4 text-center">
+      <div class="profile-card">
+        <img src="images/owner.JPG" class="img-fluid" alt="">
+      </div>
+    </div>
+
+    
+    <div class="col-lg-8">
+
+      
+      <div class="row g-3 mb-4">
+        <div class="col-md-3">
+          <div class="feature-box">
+            <i class="bi bi-award"></i>
+            <p class="fw-semibold mt-2 mb-0">6+ Years</p>
+            <small>Experience</small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-box">
+            <i class="bi bi-graph-up"></i>
+            <p class="fw-semibold mt-2 mb-0">Live Market</p>
+            <small>Experience</small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-box">
+            <i class="bi bi-people"></i>
+            <p class="fw-semibold mt-2 mb-0">Buddy Support</p>
+            <small>Guidance</small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-box">
+            <i class="bi bi-code-slash"></i>
+            <p class="fw-semibold mt-2 mb-0">Building Tech</p>
+            <small>For Traders</small>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="fw-bold">
+        We are building a <span class="text-success">Complete Ecosystem</span> for Retail Traders!
+      </h4>
+
+      <div class="journey-box my-3">
+        <small class="text-warning fw-semibold">System Driven</small>
+        <h5 class="mt-2 mb-0">
+          Fearless Trading <span>Journey</span>
+        </h5>
+      </div>
+
+      <p class="text-muted small">
+        A Game Changing Software to Analyse with Right Mindset & Rules.  
+        Helping retail traders trade confidently and consistently.
+      </p>
+
+    </div>
+  </div>
+
+ 
+  <div class="text-center mt-5">
+    <h4 class="fw-bold">
+      This Techno-Funda Session Is <span class="text-success">Perfect For…</span>
+    </h4>
+  </div>
+
+  <div class="row g-3 mt-4">
+    <div class="col-md-4">
+      <div class="audience-box">
+        <i class="bi bi-briefcase text-primary"></i> Business Owners
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="audience-box">
+        <i class="bi bi-person-badge text-success"></i> Professionals
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="audience-box">
+        <i class="bi bi-mortarboard text-warning"></i> Coaches & Professors
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="audience-box">
+        <i class="bi bi-laptop text-info"></i> Job Professionals
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="audience-box">
+        <i class="bi bi-house-door text-danger"></i> Real Estate Owners
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="audience-box">
+        <i class="bi bi-currency-rupee text-success"></i> Financial Freedom Seekers
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="text-center mt-5">
+    <a href="#" class="btn btn-cta">
+      Yes, I Want to Attend Techno-Funda Session →
+    </a>
+  </div>
+
+</div>
+</section>
+
+
+<section class="py-5">
+<div class="container">
+
+<div class="text-center mb-4">
+  <h4 class="section-title">
+    This Techno-Funda Session Is<br>
+    <span>Perfect For…</span>
+  </h4>
+  <div class="divider"></div>
+</div>
+
+<div class="row g-3 justify-content-center mb-4">
+  <div class="col-md-4">
+    <div class="perfect-card">
+      <i class="bi bi-briefcase text-primary"></i> Business Owners
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="perfect-card">
+      <i class="bi bi-person-badge text-success"></i> Professionals (Doctors, Lawyers)
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="perfect-card">
+      <i class="bi bi-mortarboard text-purple"></i> Coaches & Professors
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="perfect-card">
+      <i class="bi bi-laptop text-info"></i> Job Professionals
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="perfect-card">
+      <i class="bi bi-house-door text-warning"></i> Real Estate Owners
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="perfect-card">
+      <i class="bi bi-currency-rupee text-danger"></i> Anyone seeking Financial Freedom
+    </div>
+  </div>
+</div>
+
+<div class="text-center mb-5">
+  <a href="#" class="btn btn-cta">
+    Yes, I Want to Attend Techno-Funda Session →
+  </a>
+</div>
+
+
+<div class="text-center mb-4">
+  <h4 class="section-title">
+    Frequently Asked <span>Questions</span>
+  </h4>
+  <div class="divider"></div>
+</div>
+
+<div class="accordion mb-5" id="faqAccordion">
+  <div class="accordion-item mb-3">
+    <h2 class="accordion-header">
+      <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+        When is the session?
+      </button>
+    </h2>
+    <div id="q1" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        It is a 2-Day LIVE session conducted on Saturday & Sunday.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item mb-3">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+        Will I get recordings of both sessions?
+      </button>
+    </h2>
+    <div id="q2" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Yes, session recordings will be provided after completion.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item mb-3">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
+        What will we learn?
+      </button>
+    </h2>
+    <div id="q3" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        You’ll learn system-based trading, risk management and mindset.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item mb-3">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">
+        Is this setup really working?
+      </button>
+    </h2>
+    <div id="q4" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Yes, it is tested and used by multiple traders consistently.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item mb-3">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q5">
+        Is it live or pre-recorded?
+      </button>
+    </h2>
+    <div id="q5" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        This is a 100% LIVE interactive session.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q6">
+        Is it optional trading?
+      </button>
+    </h2>
+    <div id="q6" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        No, the focus is equity-based trading systems.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="text-center mb-3">
+  <i class="bi bi-shield-check text-success fs-4"></i>
+  <h5 class="fw-bold mt-2">Honest Disclaimer</h5>
+</div>
+
+<div class="disclaimer-box mx-auto" style="max-width:800px;">
+  Stock Market is always subject to market risk & uncertainty.
+  This session is designed to educate and empower traders with
+  proper systems, discipline, and mindset — not guaranteed profits.
+  Trade responsibly.
+</div>
+
+</div>
+</section>
+
+<footer class="last bg-dark">
+  <p class="text-white text-center p-3">@2025 All Rights Reserved</p>
+
+</footer>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+const body = document.body;
+
+toggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  toggle.classList.toggle("bi-moon");
+  toggle.classList.toggle("bi-sun");
+});
+
+  let time = 3 * 60 + 54;
+
+  setInterval(() => {
+    if (time <= 0) return;
+
+    time--;
+    let m = Math.floor(time / 60);
+    let s = time % 60;
+
+    document.getElementById("minutes").textContent =
+      String(m).padStart(2, "0");
+    document.getElementById("seconds").textContent =
+      String(s).padStart(2, "0");
+  }, 1000);
+
+</script>
+
   </body>
 </html>
